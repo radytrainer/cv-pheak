@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    overflow-x: hidden;
+    background: #cfcfcf;
+}
+.container {
+    z-index: -1;
+    background: #fff;
+    width: 70%;
+   margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #003;
+}
+
+nav .brand {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav .brand a {
+    text-decoration: none;
+    color: #003;
+}
+span {
+    color: #0ccf74;
+}
+
+
+/* CV */
+.cv {
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+}
+
+
+/* sidebar */
+.sidebar {
+    width: 30%;
+    background: rgb(228, 227, 227);
+}
+
+.sidebar .names {
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+}
+
+
+
+.sidebar .header-title-sb {
+    padding: 10px 0 10px 10px;
+    line-height: 1.4;
+}
+.header-title-sb h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #0ccf74;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+.header-title-sb .letter {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    
+}
+.header-title-sb .skills {
+    margin-bottom: 15px;
+}
+.header-title-sb .letter img {
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.header-title-sb .sb {
+    opacity: 0.7;
+}
+
+.header-title-sb .lg {
+    font-weight: normal;
+}
+
+/* Content */
+.main-content {
+    width: 70%;
+    
+}
+
+.contact-info {
+    display: flex;
+    background: rgb(238, 238, 238);
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 35px;
+}
+.contact-info .contact {
+    display: flex;
+}
+.contact-info .contact img {
+    margin-right: 10px;
+}
+
+
+/* main info */
+.main-info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.profile {
+    line-height: 1.4;
+    margin-top: 50px;
+}
+.profile h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #0ccf74;
+    margin-bottom: 20px;
+}
+.profile ul li {
+    font-size: 13px;
+    padding: 3px;
+}
+
+.bottom {
+    margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+    .contact-info  {
+        flex-direction: column;
+    }
+    .cv {
+        flex-direction: column;
+    }
+    .main-content,
+    .sidebar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+
+
+}
